@@ -85,21 +85,21 @@ $blk-clr: #000;
 }
 
 @mixin flexi_txt(){
-	border-radius: 0;
+	border-radius: 0 !important;
 	height: 50px;
 	-moz-box-shadow: inset 0px 0px 0 6px $grey-clr;
 	-webkit-box-shadow: inset 0px 0px 0 6px $grey-clr;
 	box-shadow: inset 0px 0px 0 6px $grey-clr;
 	color: #000;
 	margin: 0;
-	border: 0;
-	padding-left: 20px;
-	padding-right: 20px;
+	border: 0 !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
 	&:focus{
-		border: 0;
-		-moz-box-shadow: inset 0px 0px 0 6px $grey-clr;
-		-webkit-box-shadow: inset 0px 0px 0 6px $grey-clr;
-		box-shadow: inset 0px 0px 0 6px $grey-clr;
+		border: 0 !important;
+		-moz-box-shadow: inset 0px 0px 0 6px $grey-clr !important;
+		-webkit-box-shadow: inset 0px 0px 0 6px $grey-clr !important;
+		box-shadow: inset 0px 0px 0 6px $grey-clr !important;
 	}
 }
 
