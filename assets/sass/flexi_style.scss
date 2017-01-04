@@ -510,10 +510,8 @@ body{
 	}
 
 	.cstm_chkbox{
-		display: none;
-	}
-	.cstm_chkbox + label{
-		position: relative;
+		position: absolute;
+		left: -40px;
 		&:before{
 			content: "";
 			background: $base-fnt-clr;
@@ -524,20 +522,19 @@ body{
 			box-shadow: inset 0px 0px 0 6px $grey-clr !important;
 			outline: none;
 			position: absolute;
-			left: -40px;
-			top: -5px;
+			left: -2px;
+			top: -5px;			 
 		}
-	}
-	.cstm_chkbox:checked + label{
-		&:before{
+		&:checked:before{
 			content: "\f00c";
 			color: $secondary-clr;
 			font-family: 'FontAwesome';
 			text-align: center;
 			font-size: $base-fnt;
+			padding-top: 4px;
 		}
-	}
 
+	}
 
 	/*-- Media Query CSS starts here --*/
 
