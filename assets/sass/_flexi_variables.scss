@@ -103,19 +103,29 @@ $blk-clr: #000;
 	}
 }
 
+
 @mixin radioBtn(){		
 	margin-right: 9px;
 	margin-top: -3px;
 	vertical-align: middle;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: $base-fnt-clr;
+	border: 1px solid $base-fnt-clr;
+	border-radius: 20px;
 	&:focus{
 		outline: none;
+	}
+	&:checked{
+		background: $base-fnt-clr;
 	}
 	&:checked:before {
 		content: "";
 		display: block;
-		margin: 20%; 
-		width: 60%;
-		height: 60%;
+		margin: 19%; 
+		width: 65%;
+		height: 65%;
 		border-radius: 50%;
 		background: $secondary-clr;
 	}
