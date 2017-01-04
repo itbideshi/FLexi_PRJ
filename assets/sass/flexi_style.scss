@@ -536,6 +536,7 @@ body{
 
 	}
 
+
 	/*-- Media Query CSS starts here --*/
 
 	@media (min-width: $screen-sm-min) { 
@@ -626,9 +627,42 @@ body{
 		.errMsg{
 			font-size: $fnt20;	
 		}
+
+		.uiDatePicker--default {
+			width: 100%; 
+		}
 		
 	}
 
 	/*-- Media Query CSS ends here --*/
 
+}
+
+/*-- Datepicker css here --*/
+.uiInput--datetime .datePicker-openIcon, .uiInput--datetime .timePicker-openIcon 
+{ 
+	font-size:26px;
+}
+
+.uiDatePicker--default .datepicker__filter--month
+{ 
+	color:#000;
+}
+
+.uiDatePicker--default 
+{
+	font-size:14px;
+	width: 90%; 
+	margin-left:77px;
+}
+
+.uiDatePicker--default .datepicker__filter--month .monthYear 
+{ 
+	font-size:14px;
+}
+.uiDatePicker--default .picklist__label {
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 13px;
+	height: 27px;
 }
