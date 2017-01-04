@@ -81,13 +81,18 @@ body{
 		.getStartedBtn{
 			float: none;
 			margin: 0 auto;
-			.btn{
+			a.btn, .btn{
 				width: 100%;
 				line-height: 68px;
 				font-size: $fnt35;
 				@include primaryBtn_grad();
+				color: $base-fnt-clr;
 				&:focus{
+					color: $base-fnt-clr;
 					outline: none;
+				}
+				&:hover{
+					color: $base-fnt-clr;
 				}
 			}
 		}	
