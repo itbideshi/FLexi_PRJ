@@ -119,15 +119,21 @@ $blk-clr: #000;
 	}
 	&:checked{
 		background: $base-fnt-clr;
+		position: relative;
 	}
 	&:checked:before {
 		content: "";
 		display: block;
-		margin: 19%; 
+		left: 50%;
+		top: 50%;
+		position: absolute; 
 		width: 65%;
 		height: 65%;
 		border-radius: 50%;
 		background: $secondary-clr;
+		-webkit-transform: translate3d(-50%, -50%, 0);
+	    -moz-transform: translate3d(-50%, -50%, 0);	
+	    transform: translate3d(-50%, -50%, 0);
 	}
 }
 
