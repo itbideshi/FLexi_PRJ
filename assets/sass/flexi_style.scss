@@ -529,7 +529,8 @@ body{
 			outline: none;
 			position: absolute;
 			left: -2px;
-			top: -5px;			 
+			top: -3px;
+			z-index: 9;			 
 		}
 		&:checked:before{
 			content: "\f00c";
