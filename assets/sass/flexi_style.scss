@@ -92,7 +92,8 @@ body{
 					outline: none;
 				}
 				&:hover{
-					color: $base-fnt-clr;
+					color: $secondary-clr;
+					background: $base-fnt-clr;
 				}
 			}
 		}	
