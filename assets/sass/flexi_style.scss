@@ -10,8 +10,8 @@ body{
 	background: $body-bg;
 	color: $base-fnt-clr;
 	font-family: $font-family;
-	font-size: $base-fnt;
-	padding: 0 10px;
+	font-size: $fnt13;
+	padding: 0;
 }
 #Flexi_Container{
 	::selection{
@@ -20,9 +20,10 @@ body{
 	}
 	h1{
 		&.siteLogo{
+			width: 70%;
 			float: none;
 			text-align: center;
-			margin: 50px auto 60px;
+			margin: 50px auto 30px;
 			img{
 				@extend .img-responsive;
 				margin:0 auto;
@@ -46,36 +47,39 @@ body{
 	}
 
 	.flexi_info{
-		font-size: $fnt26;
+		font-size: $fnt17;
 		text-align: center;
 		p{
 			margin: 0 0 10px;
 		}	
 		p:nth-child(1){
-			margin-bottom: 38px;
+			margin-bottom: 18px;
 		}
 	}
 	.getStarted{
 		float: none; 
-		margin: 43px auto 50px;
+		margin: 18px auto 30px;
 		background: $primary-clr;
-		padding: 30px;
+		padding: 15px 10px;
 		
 		.reqElem{
-			padding-top: 85px;
+			padding-top: 45px;
 			text-align: center;
-			font-size: $fnt24;
+			font-size: $fnt14;
 			margin-top: 6px;
-			margin-bottom: 43px;
+			margin-bottom: 15px;
 		}
 		.IDrequire{
 			background: url('../images/id_card.png') no-repeat center top;		
+			background-size: 45px;
 		}
 		.over18{
-			background: url('../images/over18.png') no-repeat center top;		
+			background: url('../images/over18.png') no-repeat center top;
+			background-size: 45px;		
 		}
 		.upfrontFee{
 			background: url('../images/upfront_fee.png') no-repeat center top;		
+			background-size: 45px;
 		}
 
 		.getStartedBtn{
@@ -83,8 +87,8 @@ body{
 			margin: 0 auto;
 			a.btn, .btn{
 				width: 100%;
-				line-height: 68px;
-				font-size: $fnt35;
+				line-height: 33px;
+				font-size: $fnt20;
 				@include primaryBtn_grad();
 				color: $base-fnt-clr;
 				&:focus{
@@ -100,10 +104,10 @@ body{
 	}
 	.resumeApp{
 		text-align: center;
-		font-size: $fnt18;
+		font-size: $fnt14;
 		color: $secondary-clr;
 		float: none;
-		margin: 24px auto 0;
+		margin: 12px auto 0;
 		position: relative;
 		z-index: 9;
 		
@@ -139,17 +143,17 @@ body{
 		padding: 34px 30px;
 		z-index: -1;
 		color: $resumeOverlay_txt;
-		font-size: $fnt20;
+		font-size: $fnt14;
 		box-shadow: 6px 6px 0px -2px $overlay_shadow;
 
 		.overlayCntrls{
 			@include clearfix();
-			margin: 30px 0 15px;
+			margin: 20px 0 15px;
 			button{
 				@include primaryBtn_grad();
-				margin-top: 20px;
+				margin-top: 15px;
 				color: $base-fnt-clr;
-				font-size: $fnt24;
+				font-size: $fnt20;
 				height: auto;
 				outline: none;
 				&:hover, &:focus{
@@ -189,32 +193,39 @@ body{
 
 		&.saveLnk{
 			bottom: 60px;
+			padding-bottom: 15px;
+			.overlayCntrls{
+				button{
+					margin-top: 0;
+				}
+			}
 		}
 	}
 	ul.benefitsList{	
 		margin: 0;
 		padding: 0;	
-		margin-bottom:50px;
-		font-size: $fnt20;
+		margin-bottom:20px;
+		font-size: $fnt11;
 		li{
-			padding-bottom: 18px;
+			padding-bottom: 10px;
 			list-style-type: none;
-			background: url('../images/tick.png') no-repeat 0 0;
-			padding-left: 50px;
+			background: url('../images/tick.png') no-repeat 0 4px;
+			background-size: 17px;
+			padding-left: 27px;
 		}
 	}
 	.needHelp{
 		margin: 0 auto;
 		float: none;
 		text-align: center;	
-		font-size: $fnt24;	
+		font-size: $fnt14;	
 		background: $primary-clr;
-		padding: 40px 0;
+		padding: 20px 0;
 		
 		h3{
 			background: url('../images/callnow.png') no-repeat center top;
 			padding-top: 61px;
-			font-size: $fnt36;
+			font-size: $fnt20;
 			font-weight: normal;
 			margin: 13px 0 0;
 			background-size: 44px;
@@ -227,7 +238,7 @@ body{
 		border-top: 1px solid #5a5b60;
 		margin-top: 65px;
 		text-align: center;
-		font-size: $fnt20;
+		font-size: $fnt11;
 		color: #6d6d72;
 		padding: 20px 0;
 
@@ -265,9 +276,9 @@ body{
 	select, .selectBox_container{
 		@extend .form-control;
 		@include flexi_txt();
-		font-size: $fnt24;
+		font-size: $fnt14;
 		position: relative;
-		line-height: 40px;
+		line-height: 18px;
 		cursor: pointer;
 
 		&:after{
@@ -275,8 +286,9 @@ body{
 			display: inline-block;
 			position: absolute;
 			background: #fff url(../images/right_arrw.png) no-repeat center;
-			width: 28px;
-			height: 28px;
+			background-size: 14px;
+			width: 16px;
+			height: 16px;
 			right: 16px;
 			top: 50%;
 			transform-origin: 14px 14px;
@@ -287,6 +299,8 @@ body{
 		&.opened:after{
 			transform-origin: 18px 8px;
 			transform: rotate(90deg);
+			top: 16px;
+			right: 25px;
 		}	
 	}
 	.selectBox_container{
@@ -306,10 +320,10 @@ body{
 		z-index:99;
 		display: none;
 		li{
-			height: 58px;
-			line-height: 58px;
+			height: 30px;
+			line-height: 30px;
 			padding-left: 42px;
-			font-size: $fnt24;
+			font-size: $fnt14;
 			cursor: pointer;
 			&:hover, &.selected{
 				background: #f0f0f0;
@@ -321,7 +335,7 @@ body{
 	input[type="text"], textarea, input[type="tel"], input[type="email"], input[type="date"]{
 		@extend .form-control;
 		@include flexi_txt();
-		font-size: $fnt24 !important;
+		font-size: $fnt14 !important;
 		&.total{
 			-moz-box-shadow: inset 0px 0px 0 6px $secondary-clr;
 			-webkit-box-shadow: inset 0px 0px 0 6px $secondary-clr;
@@ -334,23 +348,26 @@ body{
 		}
 	}
 	::-webkit-input-placeholder{
-		font-size: $fnt24;
+		font-size: $fnt14;
 	}
 	input[type="radio"]{
 		@include radioBtn();
-		width: 30px;
-		height: 30px;
+		width: 17px;
+		height: 17px;
+		&:before{
+			border-width: 4px;
+		}
 	}
 
 	.errMsg{
 		color: $err_clr;
-		font-size: $fnt24;
+		font-size: $fnt14;
 		display: block;
-		margin-top: 5px;
 		float: left;
 		width: 100%;
 		padding: 0 10px;
 		a{
+			font-size: $fnt14 !important;
 			text-decoration: underline;
 			line-height: 0 !important;
 		}
@@ -362,8 +379,8 @@ body{
 	.flexi_thanks{
 		@include make-sm-column(7);
 		@include make-md-column(6);
-		font-size: $fnt24;
-		margin-bottom: 65px;
+		font-size: $fnt16;
+		margin-bottom: 40px;
 		text-align: center;	
 	}
 
@@ -418,7 +435,7 @@ body{
 		}
 		p{
 			margin: 0 0 15px;
-			line-height: 28px;
+			line-height: 18px;
 		}
 		
 	}
@@ -445,11 +462,12 @@ body{
 		font-weight: normal;
 		&.lbl_right_algn{
 			text-align: right;
-			line-height: 45px;
-			padding-right: 24px;
+			line-height: 30px;
+			padding-right: 12px;
+			margin-bottom: 0;
 		}
 		&.frmLbl{
-			font-size: $fnt24;
+			font-size: $fnt14;
 			font-family: 'OpenSans-Bold';
 		}
 	}
@@ -460,7 +478,7 @@ body{
 		position: relative;
 		z-index: 9;
 		a{
-			font-size: $fnt18;
+			font-size: $fnt16;
 			line-height: 52px;
 		}
 		.btn{
@@ -543,27 +561,70 @@ body{
 
 	}
 
+	ul.has-error{
+		display: none;
+		height: 0;
+	}
+
 
 	/*-- Media Query CSS starts here --*/
 
 	@media (min-width: $screen-sm-min) { 
-		body{
-			padding: 0;
-		}
 		h1{
 			&.siteLogo{
 				margin-bottom: 38px;
 
 			}
 		}
+
+		label{	
+		font-weight: normal;
+			&.lbl_right_algn{
+				padding-right: 24px;
+				line-height: 45px;
+			}
+		}
+		.getStarted{
+			margin: 43px auto 50px;
+			padding: 30px;
+			.reqElem{
+				font-size: $fnt24;
+				padding-top: 85px;
+				margin-bottom: 43px;
+			}
+			.getStartedBtn{
+				.btn, a.btn{
+					font-size: $fnt35;
+					line-height: 68px;	
+				}
+				
+			}
+
+			.IDrequire{
+				background-size: auto;
+			}
+			.over18{
+				background-size: auto;		
+			}
+			.upfrontFee{
+				background-size: auto;
+			}
+		}
+
 		.pageFooter{
 			font-size: $fnt15;
 		}
 		ul.benefitsList{
 			margin-bottom: 0;
 			font-size: $fnt18;
+			li{
+				background-size: auto;
+				padding-left: 50px;
+				padding-bottom: 18px;
+			}
 		}
 		.needHelp{
+			padding: 40px 0;
 			font-size: $fnt18;
 			h3{
 				font-size: $fnt36;
@@ -581,12 +642,16 @@ body{
 			}
 		}
 		.resumeApp{
-			font-size: $fnt18 !important;				
+			font-size: $fnt18 !important;
+			margin: 24px auto 0;				
 		}
 		.resumeApp_overlay {
+			font-size: $fnt20;
 			.overlayCntrls{
+				margin: 30px 0 15px;
 				button{
 					margin-top: 0;
+					font-size: $fnt24;
 				}
 			}
 		}
@@ -609,8 +674,12 @@ body{
 		}
 
 		input[type="radio"]{
+			margin-right: 9px;
 			width: 25px;
 			height: 25px;
+			&:before{
+				border-width: 5px;
+			}
 		}
 		.flexi_nav{
 			ul{
@@ -622,22 +691,49 @@ body{
 				}			
 			}
 		}
-
+		.flexi_thanks{
+			font-size: $fnt24;
+			margin-bottom: 65px;
+		}
 		ul.options_container{
 			li{
+				height: 58px;
+				line-height: 58px;
 				font-size: $fnt20;
 			}
 		}
 		select, .selectBox_container{
 			font-size: $fnt20;
+			line-height: 40px;
+			&:after{
+				background-size: auto;
+				width: 28px;
+				height: 28px;
+			}
+			&.opened:after{
+				right: 16px;
+				top: 20px;
+			}
 		}
 		.errMsg{
-			font-size: $fnt20;	
+			font-size: $fnt20;
+			a{
+				font-size: $fnt20 !important;
+			}	
 		}
 
-		.uiDatePicker--default {
-			width: 100%; 
+		select, .selectBox_container, input[type="text"], textarea, input[type="tel"], input[type="email"], input[type="date"]{
+			height: 50px;
 		}
+
+		.flexi_actionBtns{
+			a{
+				font-size: $fnt18;
+			}
+		}
+
+		
+
 		
 	}
 
@@ -645,7 +741,9 @@ body{
 
 }
 
+
 /*-- Datepicker css here --*/
+
 .uiInput--datetime .datePicker-openIcon, .uiInput--datetime .timePicker-openIcon 
 { 
 	font-size:26px;
@@ -672,4 +770,18 @@ body{
 	font-weight: 400;
 	margin-top: 13px;
 	height: 27px;
+}
+
+@media (min-width: $screen-sm-min) { 
+	body{
+		padding: 0;
+		font-size: $fnt16;
+	}
+	.uiDatePicker--default {
+		width: 100%; 
+	}
+}
+
+.siteforceTwoColumnLayout .row .ui-widget{
+	margin-top: 0px !important;
 }

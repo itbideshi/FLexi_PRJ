@@ -35,10 +35,13 @@ $base-fnt-clr: #fff;
 $font-family: 'OpenSans' !default;
 $font-family-bold: 'OpenSans-Bold' !default;
 $base-fnt: 16px;
+$fnt11: 11px;
 $fnt12: 12px;
+$fnt13: 13px;
 $fnt14: 14px;
 $fnt15: 15px;
 $fnt16: 16px;
+$fnt17: 17px;
 $fnt18: 18px;
 $fnt20: 20px;
 $fnt24: 24px;
@@ -72,7 +75,7 @@ $blk-clr: #000;
 
 @mixin actionBtn(){
 	border-radius: 30px;	
-	font-size: 1.75em;
+	font-size: $fnt20;
 	color: $base-fnt-clr;
 	background: $secondary-clr;
 	height: auto;	
@@ -86,7 +89,7 @@ $blk-clr: #000;
 
 @mixin flexi_txt(){
 	border-radius: 0 !important;
-	height: 50px;
+	height: 30px;
 	-moz-box-shadow: inset 0px 0px 0 6px $grey-clr;
 	-webkit-box-shadow: inset 0px 0px 0 6px $grey-clr;
 	box-shadow: inset 0px 0px 0 6px $grey-clr;
@@ -105,35 +108,28 @@ $blk-clr: #000;
 
 
 @mixin radioBtn(){		
-	margin-right: 9px;
+	margin-right: 3px;
 	margin-top: -3px;
 	vertical-align: middle;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	background: $base-fnt-clr;
-	border: 1px solid $base-fnt-clr;
-	border-radius: 20px;
+	&:before{
+		content: "";
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		background: $base-fnt-clr;
+		border: 5px solid $base-fnt-clr;
+	}
 	&:focus{
 		outline: none;
 	}
-	&:checked{
-		background: $base-fnt-clr;
-		position: relative;
-	}
 	&:checked:before {
-		content: "";
-		display: block;
-		left: 50%;
-		top: 50%;
-		position: absolute; 
-		width: 65%;
-		height: 65%;
-		border-radius: 50%;
 		background: $secondary-clr;
-		-webkit-transform: translate3d(-50%, -50%, 0);
-	    -moz-transform: translate3d(-50%, -50%, 0);	
-	    transform: translate3d(-50%, -50%, 0);
 	}
 }
 
