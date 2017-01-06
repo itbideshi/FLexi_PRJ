@@ -46,6 +46,7 @@ $fnt18: 18px;
 $fnt20: 20px;
 $fnt24: 24px;
 $fnt26: 26px;
+$fnt28: 28px;
 $fnt35: 35px;
 $fnt36: 36px;
 $blk-clr: #000;
@@ -108,12 +109,12 @@ $blk-clr: #000;
 
 
 @mixin radioBtn(){		
-	margin-right: 3px;
+	margin-right: 9px;
 	margin-top: -3px;
 	vertical-align: middle;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+	-webkit-appearance: radio;
+	-moz-appearance: radio;
+	appearance: radio;
 	&:before{
 		content: "";
 		width: 100%;
@@ -154,6 +155,15 @@ $blk-clr: #000;
 }
 
 /* Font Awesome variables */
-.fa-check:before {
+.fa{
+	font-family: 'FontAwesome';
+}
+.fa-check{
     content: "\f00c";
+}
+.fa-caret-up{
+    content: "\f0d8";
+}
+.fa-caret-down{
+    content: "\f0d7";
 }

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Flexi Expenses Page</title>
+	<link rel="stylesheet" href="assets/stylesheets/flexi_style.css" />
+</head>
+<body>
+	<div class="container" id="Flexi_Container">
+		
+		<!-- header starts here -->
+		<header class="row">
+			<h1 class="siteLogo col-xs-12">
+				<img src="assets/images/flexi_logo.png" alt="Flexi-FI finance made simple" />
+			</h1>
+		</header>
+		<!-- header ends here -->
+
+		<!-- Page Navigation starts here -->
+		<div class="row">
+			<nav class="flexi_nav col-sm-6 align_mdl">
+				 <ul>
+				 	<li class="done">1. Income</li>
+				 	<li class="done">2. Expenses</li>
+				 	<li class="active">3. About you</li>
+				 	<li>4. Decision</li>
+				 </ul>
+			</nav>
+		</div>
+		<!-- Page Navigation ends here -->
+		
+		<!-- Thank you & other messages starts here-->
+		<div class="row">
+			<section class="flexi_thanks align_mdl">
+				<!-- Thank you. Now we’ll need a little information about your expenses. -->
+			</section>
+		</div>
+		<!-- Thank you & other messages ends here-->
+
+		<!-- Page Content starts here -->
+		<div class="row">
+			<div class="col-sm-7 col-md-6 align_mdl">
+				<div class="form-group pageFrm">
+					<label class="frmLbl" for="">Your Details</label>
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">First name</label>
+						<div class="frm-cntrl-lg">
+							<input type="text" placeholder="Enter your first name" />
+						</div>
+					</div>
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">Last name</label>
+						<div class="frm-cntrl-lg">
+							<input type="text" placeholder="Enter your last name" />
+						</div>
+					</div>
+					<div class="row form-group">
+						<section class="radioGroup frm-cntrl-lg">
+							<ul>
+								<li>
+									<label for="female">
+										<input type="radio" id="female" name="gender"> Female
+									</label>
+								</li>
+								<li>
+									<label for="male">
+										<input type="radio" id="male" name="gender"> Male
+									</label>
+								</li>
+							</ul>						
+						</section>
+					</div>
+
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">Email address</label>
+						<div class="frm-cntrl-lg">
+							<input type="email" placeholder="Enter your email address" />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">Mobile number</label>
+						<div class="frm-cntrl-lg">
+							<input type="tel" placeholder="Enter your mobile number" />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">Birth date</label>
+						<div class="frm-cntrl-lg">
+							<input type="date" placeholder="Enter your birth date" />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">How would you like to identify yourself?</label>
+						<section class="radioGroup frm-cntrl-lg">
+							<ul>
+								<li>
+									<label for="dl">
+										<input type="radio" id="dl" name="identify"> Drivers license
+									</label>
+								</li>
+								<li>
+									<label for="passport">
+										<input type="radio" id="passport" name="identify"> Passport
+									</label>
+								</li>
+							</ul>						
+						</section>
+					</div>
+
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">ID number</label>
+						<div class="frm-cntrl-lg">
+							<input type="tel" placeholder="Enter your identity" />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">Citizenship status</label>
+						<div class="frm-cntrl-lg">
+							<select name="" id="">
+								<option value="">Please select --</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">Length of time in Ireland</label>
+						<div class="frm-cntrl-lg">
+							<select name="" id="">
+								<option value="">Please select --</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group pageFrm">
+					<label class="frmLbl" for="">Address</label>
+
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">Home address</label>
+						<div class="frm-cntrl-lg">
+							<input type="text" placeholder="Enter your home address">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">Length of time at this address</label>
+						<div class="frm-cntrl-lg">
+							<select name="" id="">
+								<option value="">Please select --</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">Residential status</label>
+						<div class="frm-cntrl-lg">
+							<select name="" id="">
+								<option value="">Please select --</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group pageFrm">
+					<label class="frmLbl" for="">Privacy disclosure and consent</label>
+					<div class="row">
+						<div class="frm-cntrl-lg">
+							<div class="disclosure">
+								<ul>
+									<li>	
+										<label>
+											<input type="checkbox" id="agree" class="cstm_chkbox" />
+											I have read and agree to the <a href="#">Privacy Policy</a>
+										</label>
+									</li>
+									<li>	
+										<label>
+											<input type="checkbox" class="cstm_chkbox" id="consent" />
+								I consent to giving to and seeking from credit reporting agencies, including the Irish Credit Bureau, and other credit providers named in reports from those agencies, information about my personal and commercial activities and credit worthiness.
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group pageFrm">
+					<p>You’ll need a consent code to recieve a decision from us.</p>
+					<p>By entering the unique consent code, you acknowledge that you have read these documents.</p>
+					
+					<div class="row form-group">
+						<label for="" class="frm-label-lg">Consent code</label>
+						<div class="frm-cntrl">
+							<input type="text" placeholder="Enter your consent code">
+						</div>
+					</div>
+					<div class="pos_rel">
+						Haven’t received your code? 
+						<a href="#">Click here</a>
+						<div class="resumeApp_overlay upward resend">
+							<label class="frmLbl">It can take up to a minute for some networks!</label>					
+							<p>Try moving to another area, if you are in a shopping center try somewhere in the fresh air.</p>
+							<p>If you still experience problems receiving our text message you can resend the code below.</p>
+							<div class="flexi_actionBtns">
+								
+								<div class="row form-group">
+									<div class="col-sm-12 text-center">
+										<button class="btn primary-btn form-control">Resend code</button>
+									</div>
+								</div>
+							</div>								
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+		<!-- Page Content ends here -->
+		
+		<!-- Form action buttons starts here -->
+		<div class="row">
+			<div class="col-sm-7 col-md-6 align_mdl flexi_actionBtns">
+				<div class="row">
+					<div class="col-xs-3"><a href="#">Back</a></div>
+					<div class="col-xs-6 text-center"><button class="btn primary-btn form-control">Next</button></div>
+					<div class="col-xs-3 text-right"><a href="#">Save</a></div>
+				</div>
+			</div>
+		</div>
+		<!-- Form action buttons ends here -->
+		
+		<!-- Footer starts here -->
+		<footer class="pageFooter frmFooter">
+			<ul>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms &amp; Conditions</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+			<p>&copy; Copyright Flexi Group 2016</p>
+		</footer>
+		<!-- Footer ends here -->
+
+	</div>
+	<script src="assets/scripts/jquery.min.js"></script>
+	<script src="assets/scripts/flexi_JS.js"></script>
+</body>
+</html>

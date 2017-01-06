@@ -112,24 +112,18 @@ body{
 		z-index: 9;
 		
 	}
-	.resumeApp_overlay{
+	.resumeApp_overlay{		
 		&:before{
-			content: "";
-			width: 20px;
-			height: 20px;
-			display: block;
-			border: 20px solid $resumeOverlay_bg;
-			border-left-color: transparent;
-			border-right-color: transparent;
-			border-top-color: transparent;
+			@extend .fa, .fa-caret-up;
+			font-size: 70px;
 			position: absolute;
-			top: -40px;
+			top: -60px;
 			left: 50%;
+			color: $resumeOverlay_bg;
 			-moz-transform: translateX(-50%);
 			-webkit-transform: translateX(-50%);
 			transform: translateX(-50%);
 		}
-		
 		
 		text-align: left;
 		background: $resumeOverlay_bg;
@@ -141,7 +135,7 @@ body{
 		margin-top: 26px;
 		width: 100%;
 		padding: 34px 30px;
-		z-index: -1;
+		z-index: 10;
 		color: $resumeOverlay_txt;
 		font-size: $fnt14;
 		box-shadow: 6px 6px 0px -2px $overlay_shadow;
@@ -168,37 +162,52 @@ body{
 		}
 
 		&.upward{
-			bottom: 0;
+			bottom: 45px;
 			box-shadow: -6px -6px 0px -2px $overlay_shadow;
 			&:before{
 				display: none;
-			}
+			}			
 			&:after{
-				content: "";
-				width: 20px;
-				height: 20px;
-				display: block;
-				border: 20px solid $resumeOverlay_bg;
-				border-left-color: transparent;
-				border-right-color: transparent;
-				border-bottom-color: transparent;
+				@extend .fa, .fa-caret-down;
+				font-size: 70px;
 				position: absolute;
-				bottom: -40px;
-				right: -10px;
-				-moz-transform: translateX(-50%);
-				-webkit-transform: translateX(-50%);
-				transform: translateX(-50%);
+				bottom: -55px;
+				left: 50%;
+				color: $resumeOverlay_bg;
 			}
 		}
 
 		&.saveLnk{
-			bottom: 60px;
 			padding-bottom: 15px;
+			bottom: 60px;
 			.overlayCntrls{
 				button{
 					margin-top: 0;
 				}
 			}
+			&:after{
+				left: auto;
+				right: 10px !important;
+			}
+		}
+
+		&.resend {
+			font-size: $fnt16;
+			label.frmLbl{
+				font-family: 'OpenSans';
+				font-weight: normal;
+				font-size: $fnt20;
+			}
+		}
+
+		.overlayCntrls{
+			.btn{
+				width: 100%;
+			}
+		}
+
+		.flexi_actionBtns{
+			margin: 24px 0 12px;
 		}
 	}
 	ul.benefitsList{	
@@ -370,6 +379,7 @@ body{
 			font-size: $fnt14 !important;
 			text-decoration: underline;
 			line-height: 0 !important;
+			height: auto !important;
 		}
 		a:hover{
 			text-decoration: none;
@@ -479,10 +489,23 @@ body{
 		z-index: 9;
 		a{
 			font-size: $fnt16;
-			line-height: 52px;
+			line-height: 40px;
+			display: block;
 		}
 		.btn{
 			@include actionBtn();
+			width: auto;
+			padding-left: 36px;
+			padding-right: 36px;
+		}
+		&.consentCode{			
+			.btn{
+				margin-top: 10px;
+				font-size: $fnt18;
+				width: 100%;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
 		}
 	}
 
@@ -564,6 +587,31 @@ body{
 	ul.has-error{
 		display: none;
 		height: 0;
+	}
+
+	/*-- Flexi Loader spinner css --*/
+	.flexiLoader{
+		position: fixed;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    background: rgba(0,0,0,0.5);
+	    z-index: 9;
+	    img{
+	    	position: absolute;
+		    left: 50%;
+		    top: 50%;
+		    -webkit-transform: translate(-50%, -50%);
+		    -moz-transform: translate(-50%, -50%);
+		    transform: translate(-50%, -50%);
+	    }
+	}
+	.pos_rel{
+		position: relative;
+	}
+	.smlTxt{
+		font-size: $fnt16;
 	}
 
 
@@ -674,7 +722,6 @@ body{
 		}
 
 		input[type="radio"]{
-			margin-right: 9px;
 			width: 25px;
 			height: 25px;
 			&:before{
@@ -729,12 +776,19 @@ body{
 		.flexi_actionBtns{
 			a{
 				font-size: $fnt18;
+				display: inline-block;
+				line-height: 60px;
 			}
-		}
-
-		
-
-		
+			.btn{
+				font-size: $fnt28;
+				height: 60px;
+			}
+			&.consentCode{
+				.btn{
+					font-size: $fnt24;
+				}
+			}
+		}		
 	}
 
 	/*-- Media Query CSS ends here --*/
