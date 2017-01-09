@@ -287,7 +287,7 @@ body{
 		@include flexi_txt();
 		font-size: $fnt14;
 		position: relative;
-		line-height: 18px;
+		line-height: 28px;
 		cursor: pointer;
 
 		&:after{
@@ -320,8 +320,10 @@ body{
 
 	input[type="text"].selectBox_container{
 		background: #fff url(../images/right_arrw.png) no-repeat calc(100% - 15px) center;
+		background-size: 14px;
 		&.opened{
 			background: #fff url(../images/down_arrw.png) no-repeat calc(100% - 15px) center;
+			background-size: 14px;
 		}
 	}
 
@@ -509,7 +511,7 @@ body{
 		a{
 			font-size: $fnt16;
 			line-height: 40px;
-			display: block;
+			display: inline-block;
 		}
 		.btn{
 			@include actionBtn();
@@ -779,6 +781,13 @@ body{
 			&.opened:after{
 				right: 16px;
 				top: 20px;
+			}
+		}
+
+		input[type="text"].selectBox_container{
+			background-size: auto;
+			&.opened{
+				background-size: auto;
 			}
 		}
 		.errMsg{
