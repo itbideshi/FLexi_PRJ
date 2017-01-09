@@ -439,6 +439,7 @@ body{
 		@include clearfix();
 		.form-group{
 			margin-bottom: 30px;
+			white-space: nowrap;
 		}
 		.row.form-group:last-child{
 			margin-bottom: 0;
@@ -472,16 +473,26 @@ body{
 		font-weight: normal;
 		&.lbl_right_algn{
 			text-align: right;
-			line-height: 30px;
 			padding-right: 12px;
 			margin-bottom: 0;
+			display: inline-block;
+			float: none;
+			vertical-align: middle;
+			line-height: 14px;
+			white-space: normal !important;
+			width: 49%;
 		}
 		&.frmLbl{
 			font-size: $fnt14;
-			font-family: 'OpenSans-Bold';
+			font-family: 'OpenSans-Bold';			
 		}
 	}
-
+	label.lbl_right_algn+.frm-cntrl{
+		display: inline-block;
+		float: none;
+		white-space: normal !important;
+		width: 49%;
+	}
 
 	.flexi_actionBtns{
 		margin-top: 8px;
@@ -629,7 +640,7 @@ body{
 		font-weight: normal;
 			&.lbl_right_algn{
 				padding-right: 24px;
-				line-height: 45px;
+				line-height: 24px;
 			}
 		}
 		.getStarted{
