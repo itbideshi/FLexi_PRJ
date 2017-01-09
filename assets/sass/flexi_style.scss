@@ -318,6 +318,13 @@ body{
 		appearance: none;
 	}
 
+	input[type="text"].selectBox_container{
+		background: #fff url(../images/right_arrw.png) no-repeat calc(100% - 15px) center;
+		&.opened{
+			background: #fff url(../images/down_arrw.png) no-repeat calc(100% - 15px) center;
+		}
+	}
+
 	ul.options_container{
 		padding: 0; 
 		margin: 0;
