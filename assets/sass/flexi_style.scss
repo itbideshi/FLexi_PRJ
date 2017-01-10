@@ -209,6 +209,32 @@ body{
 			margin: 24px 0 12px;
 		}
 	}
+
+	.saveApp_overlay{
+		right: -18%;
+		left:auto;
+		-moz-transform: translateX(-50%);
+		font-size:$fnt13!important;
+		margin-top:0px;
+		padding: 10px 10px 5px 10px;
+		text-align:center;
+		width: 46%;
+
+		&:before {
+			font-size: 70px;
+			top: -56px;
+			left: 86%!important;
+			color: #e7e1e6;
+		}
+
+		&:after {
+			font-size: 70px;
+			position: absolute;
+			bottom: -55px;
+			left: 50%;
+		}
+	}
+
 	ul.benefitsList{	
 		margin: 0;
 		padding: 0;	
@@ -844,7 +870,16 @@ body{
 				   	}
 				}
 			}
-		}		
+		}	
+
+		.saveApp_overlay{
+			font-size:$fnt20!important;
+			right: -22%;
+			box-shadow: 5px 5px 0px -2px $overlay_shadow;
+			&:before {
+				left: 86%;
+			} 
+		}	
 	}
 
 	/*-- Media Query CSS ends here --*/
