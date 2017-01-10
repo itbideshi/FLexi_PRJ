@@ -97,7 +97,6 @@ body{
 				}
 				&:hover{
 					color: $secondary-clr;
-					background: $base-fnt-clr;
 				}
 			}
 		}	
@@ -405,7 +404,7 @@ body{
 
 
 	.flexi_heading{
-		font-size: 1.625em;
+		font-size: $fnt26;
 		margin-bottom: 30px;
 		text-align: center;
 	}
@@ -416,7 +415,7 @@ body{
 
 		.frmLbl 
 		{
-			font-size:18px;
+			font-size:$fnt18;
 			margin-bottom:10px;
 		}
 
@@ -446,9 +445,13 @@ body{
 	.expenseFrm, .pageFrm{
 		margin-bottom: 40px;
 		@include clearfix();
+		.flexiCalci{
+			.form-group{
+				white-space: nowrap;
+			}
+		}
 		.form-group{
 			margin-bottom: 30px;
-			white-space: nowrap;
 		}
 		.row.form-group:last-child{
 			margin-bottom: 0;
@@ -515,7 +518,6 @@ body{
 		}
 		.btn{
 			@include actionBtn();
-			width: auto;
 			padding-left: 36px;
 			padding-right: 36px;
 		}
@@ -599,7 +601,7 @@ body{
 			color: $secondary-clr;
 			font-family: 'FontAwesome';
 			text-align: center;
-			font-size: $base-fnt;
+			font-size: $fnt16;
 			padding-top: 4px;
 		}
 
@@ -633,6 +635,20 @@ body{
 	}
 	.smlTxt{
 		font-size: $fnt16;
+	}
+
+	/*-- Address Field CSS --*/
+	.slds-lookup__Custom{
+		li.slds-lookup__item{
+			a{
+				color: $blk-clr;
+				padding: 6px 12px 6px 42px;
+			    font-size: $fnt14;
+			   	&:hover{
+			   		background: #f0f0f0;
+			   	}
+			}
+		}
 	}
 
 
@@ -816,6 +832,18 @@ body{
 					font-size: $fnt24;
 				}
 			}
+		}
+		.slds-lookup__Custom{
+			li.slds-lookup__item{
+				a{
+					color: $blk-clr;
+					padding: 12px 12px 12px 42px;
+				    font-size: $fnt20;
+				   	&:hover{
+				   		background: #f0f0f0;
+				   	}
+				}
+			}
 		}		
 	}
 
@@ -828,7 +856,7 @@ body{
 
 .uiInput--datetime .datePicker-openIcon, .uiInput--datetime .timePicker-openIcon 
 { 
-	font-size:26px;
+	font-size: $fnt26;
 }
 
 .uiDatePicker--default .datepicker__filter--month
@@ -838,17 +866,17 @@ body{
 
 .uiDatePicker--default 
 {
-	font-size:14px;
+	font-size: $fnt14;
 	width: 90%; 
 	margin-left:77px;
 }
 
 .uiDatePicker--default .datepicker__filter--month .monthYear 
 { 
-	font-size:14px;
+	font-size: $fnt14;
 }
 .uiDatePicker--default .picklist__label {
-	font-size: 14px;
+	font-size: $fnt14;
 	font-weight: 400;
 	margin-top: 13px;
 	height: 27px;

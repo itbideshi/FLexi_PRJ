@@ -57,7 +57,7 @@ $resumeOverlay_txt: #002d55;
 $overlay_shadow: #858383;
 $err_clr: #f7941d;
 $disclr_bg: #41464d;
-
+$btn-gry: #e5e5e5;
 $primary-clr: #293037;
 $secondary-clr: #1fcbb0;
 $secondaryAlt-clr: #4cd5c0;
@@ -78,10 +78,10 @@ $blk-clr: #000;
 	border-radius: 30px;	
 	font-size: $fnt20;
 	color: $base-fnt-clr;
-	background: $secondary-clr;
+	@include btn_grad();
+
 	height: auto;	
 	&:hover, &:focus{
-		background: $base-fnt-clr;
 		color: $secondary-clr;
 		box-shadow: none;
 		outline: none;
@@ -115,6 +115,9 @@ $blk-clr: #000;
 	-webkit-appearance: radio;
 	-moz-appearance: radio;
 	appearance: radio;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
 	&:before{
 		content: "";
 		width: 100%;
@@ -133,10 +136,7 @@ $blk-clr: #000;
 		background: $secondary-clr;
 	}
 }
-
-@mixin primaryBtn_grad(){
-	border-radius: 10px;
-	border: transparent;
+@mixin btn_grad(){
 	background: $secondary-clr;
 
 	background: -moz-linear-gradient(top, $secondaryAlt-clr 0%, $secondaryAlt-clr 50%, $secondary-clr 51%, $secondary-clr 100%);
@@ -152,6 +152,31 @@ $blk-clr: #000;
 	background: linear-gradient(to bottom, $secondaryAlt-clr 0%, $secondaryAlt-clr 50%, $secondary-clr 51%, $secondary-clr 100%);
 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$secondaryAlt-clr', endColorstr='#1fcbb1', GradientType=0 );
+
+	&:hover{
+		background: $base-fnt-clr;
+
+		background: -moz-linear-gradient(top, $base-fnt-clr 0%, $base-fnt-clr 50%, $btn-gry 51%, $btn-gry 100%);
+		
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, $base-fnt-clr), color-stop(50%, $base-fnt-clr), color-stop(51%, $btn-gry), color-stop(100%, $btn-gry));
+		
+		background: -webkit-linear-gradient(top, $base-fnt-clr 0%, $base-fnt-clr 50%, $btn-gry 51%, $btn-gry 100%);
+		
+		background: -o-linear-gradient(top, $base-fnt-clr 0%, $base-fnt-clr 50%, $btn-gry 51%, $btn-gry 100%);
+		
+		background: -ms-linear-gradient(top, $base-fnt-clr 0%, $base-fnt-clr 50%, $btn-gry 51%, $btn-gry 100%);
+		
+		background: linear-gradient(top, $base-fnt-clr 0%, $base-fnt-clr 50%, $btn-gry 51%, $btn-gry 100%);
+
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$base-fnt-clr', endColorstr='$btn-gry', GradientType=0 );
+	}
+}
+
+@mixin primaryBtn_grad(){
+	border-radius: 10px;
+	border: transparent;
+	@include btn_grad();
+	
 }
 
 /* Font Awesome variables */
