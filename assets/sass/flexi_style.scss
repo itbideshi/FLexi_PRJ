@@ -681,6 +681,16 @@ body{
 	/*-- Media Query CSS starts here --*/
 
 	@media (min-width: $screen-sm-min) { 
+	
+		.saveApp_overlay{
+			font-size:$fnt20!important;
+			right: -22%;
+			box-shadow: 5px 5px 0px -2px $overlay_shadow;
+			&:before {
+				left: 86%;
+			} 
+		}
+
 		h1{
 			&.siteLogo{
 				margin-bottom: 38px;
@@ -872,14 +882,7 @@ body{
 			}
 		}	
 
-		.saveApp_overlay{
-			font-size:$fnt20!important;
-			right: -22%;
-			box-shadow: 5px 5px 0px -2px $overlay_shadow;
-			&:before {
-				left: 86%;
-			} 
-		}	
+			
 	}
 
 	/*-- Media Query CSS ends here --*/
