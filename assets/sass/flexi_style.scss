@@ -144,6 +144,7 @@ body{
 			margin: 20px 0 15px;
 			button{
 				@include primaryBtn_grad();
+				box-shadow: none;
 				margin-top: 15px;
 				color: $base-fnt-clr;
 				font-size: $fnt20;
@@ -207,6 +208,14 @@ body{
 
 		.flexi_actionBtns{
 			margin: 24px 0 12px;
+		}
+		&.cancelOrder{
+			bottom: 62px;
+			&:after{
+				-moz-transform: translateX(-50%);
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+			}
 		}
 	}
 
@@ -677,11 +686,29 @@ body{
 		}
 	}
 
+	.approvalDetails{
+		margin: 0;
+		padding: 0;
+		li{
+			list-style-type: none;
+			padding: 0 0 15px;
+			@include clearfix();
+			label{
+				width: 142px;
+				float: left;
+			}
+			span{
+				font-weight: bold;
+				float: left;
+			}
+		}
+	}
+
 
 	/*-- Media Query CSS starts here --*/
 
 	@media (min-width: $screen-sm-min) { 
-	
+
 		.saveApp_overlay{
 			font-size:$fnt20!important;
 			right: -22%;

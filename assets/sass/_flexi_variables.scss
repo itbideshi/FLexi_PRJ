@@ -79,11 +79,15 @@ $blk-clr: #000;
 	font-size: $fnt20;
 	color: $base-fnt-clr;
 	@include btn_grad();
-
+	-moz-box-shadow: 8px 10px 10px $blk-clr;
+	-webkit-box-shadow: 8px 10px 10px $blk-clr;
+	box-shadow: 8px 10px 10px $blk-clr;
 	height: auto;	
 	&:hover, &:focus{
 		color: $secondary-clr;
-		box-shadow: none;
+		-moz-box-shadow: 8px 10px 10px $blk-clr;
+		-webkit-box-shadow: 8px 10px 10px $blk-clr;
+		box-shadow: 8px 10px 10px $blk-clr;
 		outline: none;
 	}
 }
