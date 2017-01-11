@@ -208,9 +208,17 @@ body{
 
 		.flexi_actionBtns{
 			margin: 24px 0 12px;
+			.btn{
+				box-shadow: none;
+				&:hover, &:focus{
+					box-shadow: none;
+					background: $base-fnt-clr;
+				}
+			}
 		}
 		&.cancelOrder{
 			bottom: 62px;
+			width: calc(100% - 20px);
 			&:after{
 				-moz-transform: translateX(-50%);
 				-webkit-transform: translateX(-50%);
@@ -400,6 +408,12 @@ body{
 		}
 	}
 	::-webkit-input-placeholder{
+		font-size: $fnt14;
+	}
+	::-moz-placeholder{
+		font-size: $fnt14;
+	}
+	::placeholder{
 		font-size: $fnt14;
 	}
 	input[type="radio"]{
@@ -818,6 +832,12 @@ body{
 			font-size: $fnt20 !important;
 		}
 		::-webkit-input-placeholder{
+			font-size: $fnt20;
+		}
+		::-moz-placeholder{
+			font-size: $fnt20;
+		}
+		::placeholder{
 			font-size: $fnt20;
 		}
 
