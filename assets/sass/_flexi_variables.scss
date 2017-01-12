@@ -83,7 +83,7 @@ $blk-clr: #000;
 	-webkit-box-shadow: 8px 10px 10px $blk-clr;
 	box-shadow: 8px 10px 10px $blk-clr;
 	height: auto;	
-	&:hover, &:focus{
+	&:hover{
 		color: $secondary-clr;
 		-moz-box-shadow: 8px 10px 10px $blk-clr;
 		-webkit-box-shadow: 8px 10px 10px $blk-clr;
