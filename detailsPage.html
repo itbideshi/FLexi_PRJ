@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Flexi Expenses Page</title>
+	<link rel="stylesheet" href="assets/stylesheets/flexi_style.css" />
+</head>
+<body>
+	<div class="container" id="Flexi_Container">
+		
+		<!-- header starts here -->
+		<header class="row">
+			<h1 class="siteLogo col-xs-12">
+				<img src="assets/images/flexi_logo.png" alt="Flexi-FI finance made simple" />
+			</h1>
+		</header>
+		<!-- header ends here -->
+
+		<!-- Page Navigation starts here -->
+		<div class="row">
+			<nav class="flexi_nav col-sm-6 align_mdl">
+				 <ul>
+				 	<li class="active">1. Details</li>
+				 	<li >2. Plans</li>
+				 	<li>3. Terms</li>
+				 	<li>4. Payment</li>
+				 </ul>
+			</nav>
+		</div>
+		<!-- Page Navigation ends here -->
+		
+		
+
+		<!-- Page Content starts here -->
+		<div class="row">
+			<div class="col-sm-7 col-md-6 align_mdl midCont">
+				<div class="form-group pageFrm">
+					<label class="frmLbl">Approval details</label>
+					<ul class="approvalDetails">
+						<li>
+							<label>Name</label> <span>Peter Piper</span>
+						</li>
+						<li>
+							<label>Mobile</label> <span>0410 000 000</span>
+						</li>
+						<li>
+							<label>Expires on</label> <span>21/03/2017</span>
+						</li>
+						<li>
+							<label>Req. amount</label> <span>€ 3000.00</span>
+						</li>
+						<li>
+							<label>Credit limit*</label> <span>€ 3700.00</span>
+						</li>
+						<li>
+							<label>Used limit</label> <span>€ 3000.00</span>
+						</li>
+						<li>
+							<label>Remaining limit</label> <span>€ 3700.00</span>
+						</li>
+					</ul>
+					
+					<em>
+						*Credit Limit is subject to affordability, selected product and  available term.
+					</em>
+					
+				</div>
+
+				<div class="form-group pageFrm">
+					<label class="frmLbl">Purchase details</label>
+					<div class="row form-group">
+						<label class="frm-label-lg">Salespersons name</label>
+						<div class="frm-cntrl-lg">
+							<input type="text" placeholder="Enter the salespersons name" />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label class="frm-label-lg">Invoice balance</label>
+						<div class="frm-cntrl-lg">
+							<input type="text" placeholder="Enter the invoice balance" />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label class="frm-label-lg">Reference number (optional)</label>
+						<div class="frm-cntrl-lg">
+							<input type="text" placeholder="Enter the reference number" />
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<!-- Page Content ends here -->
+		
+		<!-- Form action buttons starts here -->
+		<div class="row">
+			<div class="col-sm-7 col-md-6 align_mdl flexi_actionBtns">
+				<div class="row">
+					<div class="col-xs-3"></div>
+					<div class="col-xs-6"><button class="btn primary-btn form-control">Next</button></div>
+					<div class="col-xs-3 text-right"><a href="#">Save</a></div>
+				</div>
+				<div class="row mrgn_t20">
+					<div class="col-xs-12 text-center">
+						<a href="#">Cancel this order</a>
+						<div class="resumeApp_overlay upward cancelOrder">
+							<div class="text-center">
+								Are you sure you want to cancel ?
+								<div class="row">
+									<div class="col-sm-6">
+										<a href="#" class="red"><strong>No, don't cancel</strong></a>
+									</div>
+									<div class="col-sm-6">
+										<a href="#"><strong>Yes, cancel</strong></a>
+									</div>
+								</div>
+							</div>
+							
+								
+															
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Form action buttons ends here -->
+		
+		<!-- Footer starts here -->
+		<footer class="pageFooter frmFooter">
+			<ul>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms &amp; Conditions</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+			<p>&copy; Copyright Flexi Group 2016</p>
+		</footer>
+		<!-- Footer ends here -->
+
+	</div>
+	<script src="assets/scripts/jquery.min.js"></script>
+	<script src="assets/scripts/flexi_JS.js"></script>
+</body>
+</html>
