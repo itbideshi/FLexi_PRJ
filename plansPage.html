@@ -21,119 +21,107 @@
 		<div class="row">
 			<nav class="flexi_nav col-sm-6 align_mdl">
 				 <ul>
-				 	<li class="done">1. Income</li>
-				 	<li class="active">2. Expenses</li>
-				 	<li>3. About you</li>
-				 	<li>4. Decision</li>
+				 	<li class="done">1. Details</li>
+				 	<li class="active">2. Plans</li>
+				 	<li>3. Terms</li>
+				 	<li>4. Payment</li>
 				 </ul>
 			</nav>
 		</div>
 		<!-- Page Navigation ends here -->
 		
-		<!-- Thank you & other messages starts here-->
-		<div class="row">
-			<section class="flexi_thanks align_mdl">
-				<!-- Thank you. Now we’ll need a little information about your expenses. -->
-			</section>
-		</div>
-		<!-- Thank you & other messages ends here-->
+		
 
 		<!-- Page Content starts here -->
 		<div class="row">
-			<div class="col-sm-7 col-md-6 align_mdl">
-				<div class="form-group pageFrm">
-					<label class="frmLbl">Approval details</label>
-					<ul class="approvalDetails">
-						<li>
-							<label>Name</label> <span>Peter Piper</span>
-						</li>
-						<li>
-							<label>Mobile</label> <span>0410 000 000</span>
-						</li>
-						<li>
-							<label>Expires on</label> <span>21/03/2017</span>
-						</li>
-						<li>
-							<label>Req. amount</label> <span>€ 3000.00</span>
-						</li>
-						<li>
-							<label>Credit limit*</label> <span>€ 3700.00</span>
-						</li>
-						<li>
-							<label>Used limit</label> <span>€ 3000.00</span>
-						</li>
-						<li>
-							<label>Remaining limit</label> <span>€ 3700.00</span>
-						</li>
-					</ul>
-					
-					<em>
-						*Credit Limit is subject to affordability, selected product and  available term.
-					</em>
-					
+			<div class="col-sm-7 col-md-6 align_mdl midCont">
+				<div class="planCont">
+					<div class="form-group paymentPlan">
+							<label class="frmLbl" for="">Select your payment plan</label>
+							<p>Loan amount: €3000.00</p>
+					</div>
+
+					<div class="paymentBox">
+						
+						<div class="payMidCont">
+						<label for="" class="frmLbl">12 months - 3 months interest free</label>
+						<ul>
+							<li><label for="" class="col-xs-7">Interest free payments</label> <span class="col-xs-2">3</span> <span class="col-xs-3">€60.00</span></li>
+
+							<li><label for="" class="col-xs-7">Remaing payments</label> <span class="col-xs-2">9</span> <span class="col-xs-3">€120.00</span></li>
+
+							<li><label for="" class="col-xs-7"><strong>Total payments*</strong></label> <span class="col-xs-2">12</span> <span class="col-xs-3">€2400.00</span></li>
+							<li><label for="" class="col-xs-7"><em>* Includes fees of</em></label> <span class="col-xs-2">3</span> <span class="col-xs-3">€0.00</span></li>
+
+						</ul>
+						</div>
+
+						<div class="botCont"><span class="tickOff"><a href="#">I select this option</a></span></div>
+					</div>
+
+					<div class="paymentBox">
+						
+						<div class="payMidCont">
+						<label for="" class="frmLbl">18 months - 3 months interest free</label>
+						<ul>
+							<li><label for="" class="col-xs-7">Interest free payments</label> <span class="col-xs-2">3</span> <span class="col-xs-3">€80.00</span></li>
+
+							<li><label for="" class="col-xs-7">Remaing payments</label> <span class="col-xs-2">9</span> <span class="col-xs-3">€180.00</span></li>
+
+							<li><label for="" class="col-xs-7"><strong>Total payments*</strong></label> <span class="col-xs-2">12</span> <span class="col-xs-3">€2800.00</span></li>
+							<li><label for="" class="col-xs-7"><em>* Includes fees of</em></label> <span class="col-xs-2">3</span> <span class="col-xs-3">€100</span></li>
+
+						</ul>
+						</div>
+
+						<div class="botCont"><span class="tickOff"><a href="#">I select this option</a></span></div>
+					</div>
+
+
+					<div class="paymentBox">
+						
+						<div class="payMidCont">
+						<label for="" class="frmLbl">24 months - 3 months interest free</label>
+						<ul>
+							<li><label for="" class="col-xs-7">Interest free payments</label> <span class="col-xs-2">3</span> <span class="col-xs-3">€100.00</span></li>
+
+							<li><label for="" class="col-xs-7">Remaing payments</label> <span class="col-xs-2">9</span> <span class="col-xs-3">€200.00</span></li>
+
+							<li><label for="" class="col-xs-7"><strong>Total payments*</strong></label> <span class="col-xs-2">12</span> <span class="col-xs-3">€3000.00</span></li>
+							<li><label for="" class="col-xs-7"><em>* Includes fees of</em></label> <span class="col-xs-2">3</span> <span class="col-xs-3">€200.00</span></li>
+
+						</ul>
+						</div>
+
+						<div class="botCont"><span class="tickOff"><a href="#">I select this option</a></span>
+						</div>
+					</div>
+
 				</div>
+		</div>
 
-				<div class="form-group pageFrm">
-					<label class="frmLbl">Purchase details</label>
-					<div class="row form-group">
-						<label class="frm-label-lg">Salespersons name</label>
-						<div class="frm-cntrl-lg">
-							<input type="text" placeholder="Enter the salespersons name" />
-						</div>
-					</div>
-
-					<div class="row form-group">
-						<label class="frm-label-lg">Invoice balance</label>
-						<div class="frm-cntrl">
-							<input type="text" placeholder="Enter the invoice balance" />
-						</div>
-					</div>
-
-					<div class="row form-group">
-						<label class="frm-label-lg">Reference number (optional)</label>
-						<div class="frm-cntrl">
-							<input type="text" placeholder="Enter the reference number" />
-						</div>
-					</div>
-
-				</div>
-
-			</div>
 		</div>
 		<!-- Page Content ends here -->
 		
+
 		<!-- Form action buttons starts here -->
 		<div class="row">
 			<div class="col-sm-7 col-md-6 align_mdl flexi_actionBtns">
 				<div class="row">
-					<div class="col-xs-3"></div>
-					<div class="col-xs-6"><button class="btn primary-btn form-control">Next</button></div>
-					<div class="col-xs-3 text-right"><a href="#">Save</a></div>
-				</div>
-				<div class="row mrgn_t20">
-					<div class="col-xs-12 text-center">
-						<a href="#">Cancel this order</a>
-						<div class="resumeApp_overlay upward cancelOrder">
-							<div class="text-center">
-								Are you sure you want to cancel ?
-								<div class="row">
-									<div class="col-sm-6">
-										<a href="#">No, Don't Cancel</a>
-									</div>
-									<div class="col-sm-6">
-										<a href="#">Yes Cancel</a>
-									</div>
-								</div>
-							</div>
-							
-								
-															
-						</div>
-					</div>
+					<div class="col-xs-3 col-sm-4"><a href="#">Back</a></div>
+					<div class="col-xs-6 col-sm-4"><button class="btn primary-btn form-control">Next</button></div>
+					<div class="col-xs-3 col-sm-4 text-right"><a href="#">Save</a></div>
 				</div>
 			</div>
 		</div>
 		<!-- Form action buttons ends here -->
+
+		<div class="row mrgn_t40">
+			<div class="text-center"><a href="#">Send to customer </a>  |   <a href="#">Cancel</a> </div>
+		</div>
+		
+		
+		
 		
 		<!-- Footer starts here -->
 		<footer class="pageFooter frmFooter">
