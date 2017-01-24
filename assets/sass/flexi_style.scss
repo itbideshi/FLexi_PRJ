@@ -46,6 +46,8 @@ body{
 		}
 	}
 
+	.paddLR0 { padding-left:0px!important; padding-right:0px!important;}
+
 	.flexi_info{
 		font-size: $fnt17;
 		text-align: center;
@@ -706,6 +708,16 @@ body{
 		}
 	}
 
+	.midCont 
+	{
+		margin-top:10px;	
+	}
+
+	.red 
+	{ 
+		color:$red-clr;
+	}	
+
 	.approvalDetails{
 		margin: 0;
 		padding: 0;
@@ -720,15 +732,182 @@ body{
 			span{
 				font-weight: bold;
 				float: left;
+				margin-top:1px;
 			}
 		}
 	}
+
+
+	.successCont 
+	{
+		margin-bottom:70px;	
+		label.frmLbl 
+		{
+			background: url('../images/stick.png') no-repeat left top;
+			padding-left:50px;	
+			padding-top:10px;
+		}
+			
+	}
+
+	.planCont 
+	{
+
+		.paymentPlan 
+		{
+		 	margin-bottom:40px;	
+		}
+
+		.paymentBox 
+		{		
+			@include clearfix();
+			margin-bottom:40px;	
+			background:$disclr_bg;
+			
+			.payMidCont
+			 { 
+			 padding:20px 20px 10px 20px;	
+				ul 
+				{
+				@include clearfix();
+				margin:0px;
+				padding:0px;
+					li 
+					{
+					  list-style-type:none;
+					  span { text-align:right; font-weight:bold;}
+					  label { text-align:left; padding-left:0px;}
+
+					}
+				}
+
+			}
+			.botCont 
+			{
+				@include clearfix();
+				padding:15px;
+				background:$secondary-clr;
+
+			  &.clicked 
+			  {
+			     color:$base-fnt-clr;			     
+			  }	
+
+			  .tick 
+			  {
+			  		background: url('../images/stick.png') no-repeat left top;
+			  		height:35px;
+			  		line-height:35px;
+			  		display:inline-block; 
+			  		padding-left:40px;
+			  		color:$base-fnt-clr;
+			  }	
+			}
+
+			&.selected 
+			{
+				background:$base-fnt-clr;
+				color:$blk-clr;	
+			}
+
+			a {
+			    color:$base-fnt-clr;		
+			}		
+		}
+
+		.viewAll 
+		{
+		   margin-bottom:40px;		
+		}		
+	}
+
+.termsCont 
+{
+	margin-bottom:80px;	
+	.paymentBox 
+	{
+		margin-bottom:0px!important;
+	}	
+	.termHeading 
+	{
+		@include clearfix();	
+		border-bottom:1px $grey-clr solid;
+		margin-bottom:15px;	
+		font-weight:bold;
+		font-size:$fnt16;
+	}		
+}
+
+.termsApp_overlay 
+{
+	.termsAppHead 
+	{
+		background: url('../images/terms_icn.png') no-repeat left top;
+		padding-left:80px;
+		border-bottom:1px $grey-dark-clr solid;	
+		margin-bottom:20px;
+
+	}
+
+	a 
+		{
+		  font-size:$fnt20!important;	
+		}
+
+}
+
+
+	@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) 
+{
+
+.getStartedCont 
+{
+	@include make-xs-column(6);
+}	
+
+.benfitListCont, 
+{
+	@include make-xs-column(6);	
+}
+
+.needHelpCont
+
+{
+	@include make-xs-column(6);	
+} 
+	
+ }
 
 
 	/*-- Media Query CSS starts here --*/
 
 	@media (min-width: $screen-sm-min) { 
 
+		.midCont 
+		{
+			margin-top:44px;	
+		}	
+
+		.successCont 
+		{
+			padding-top:44px;
+			label.frmLbl 
+			{
+			  padding-top:5px;
+			}
+
+		}
+
+		.planCont 
+		 {	
+			.viewAll 
+			{
+			   margin-bottom:80px;		
+			}
+		 }			
 		.saveApp_overlay{
 			font-size:$fnt20!important;
 			right: -22%;
