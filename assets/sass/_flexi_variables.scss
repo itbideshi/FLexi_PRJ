@@ -62,8 +62,9 @@ $primary-clr: #293037;
 $secondary-clr: #1fcbb0;
 $secondaryAlt-clr: #4cd5c0;
 $grey-clr: #ebebeb;
+$grey-dark-clr:#b9bdc9;
 $blk-clr: #000;
-
+$red-clr:#cc0000;
 .mrgn_t10{
 	margin-top: 10px;	
 }
@@ -72,6 +73,9 @@ $blk-clr: #000;
 }
 .mrgn_t20{
 	margin-top: 20px;	
+}
+.mrgn_t40{
+	margin-top: 40px;	
 }
 
 @mixin actionBtn(){
