@@ -117,7 +117,7 @@ $red-clr:#cc0000;
 
 
 @mixin radioBtn(){		
-	/*margin-right: 9px;
+	margin-right: 9px;
 	margin-top: -3px;
 	vertical-align: middle;
 	-webkit-appearance: radio;
@@ -142,31 +142,8 @@ $red-clr:#cc0000;
 	}
 	&:checked:before {
 		background: $secondary-clr;
-	}*/
+	}
 }
-
-.customRadioBtn{
-    display: inline-block;
-    left: 0;
-    position: absolute;
-    &:before{
-	    content: "";
-	    width: 100%;
-	    height: 100%;
-	    display: inline-block;
-	    -moz-border-radius: 50%;
-	    -webkit-border-radius: 50%;
-	    border-radius: 50%;
-	    background: $base-fnt-clr;
-	    border: 5px solid $base-fnt-clr;
-    }
-}
-input[type="radio"]:checked ~ .customRadioBtn{
-    &:before{
-        background: $secondary-clr;
-    }
-}
-
 @mixin btn_grad(){
 	background: $secondary-clr;
 
