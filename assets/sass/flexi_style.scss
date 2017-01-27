@@ -425,13 +425,24 @@ body{
 		font-size: $fnt14;
 	}
 	input[type="radio"]{
-		@include radioBtn();
-		width: 17px;
-		height: 17px;
-		&:before{
+		//@include radioBtn();
+		//width: 17px;
+		//height: 17px;
+		vertical-align: middle;
+        visibility: hidden;
+		/*&:before{
 			border-width: 4px;
-		}
+		}*/
 	}
+
+	.customRadioBtn{
+	    width: 17px;
+	    height: 17px;
+	    &:before{
+	        border-width: 4px;
+	    }
+	}
+
 
 	.errMsg{
 		color: $err_clr;
@@ -531,6 +542,11 @@ body{
 		li:last-child{
 			margin-bottom: 0;
 		}
+		label{
+		    position: relative;
+		    padding-left: 15px;
+		}
+
 	}
 
 	.decisionCont 
@@ -653,15 +669,28 @@ body{
 			top: -3px;
 			z-index: 9;			 
 		}
-		&:checked:before{
+		/*&:checked:before{
 			content: "\f00c";
 			color: $secondary-clr;
 			font-family: 'FontAwesome';
 			text-align: center;
 			font-size: $fnt16;
 			padding-top: 4px;
-		}
+		}*/
+	}
 
+	input[type="checkbox"]{
+	    visibility: hidden;
+	}
+	input[type="checkbox"]:checked ~ .cstm_chkbox{
+	    &:before{
+	        content: "\f00c";
+	        color: $secondary-clr;
+	        font-family: 'FontAwesome';
+	        text-align: center;
+	        font-size: $fnt14;
+	        padding-top: 4px;
+	    }
 	}
 
 	ul.has-error{
@@ -1027,12 +1056,21 @@ and (orientation : landscape)
 		}
 
 		input[type="radio"]{
-			width: 25px;
+			/*width: 25px;
 			height: 25px;
 			&:before{
 				border-width: 5px;
-			}
+			}*/
 		}
+		.customRadioBtn{
+		    width: 25px;
+		    height: 25px;
+		    top: -2px;
+		    &:before{
+		        border-width: 5px;
+		    }
+		}
+
 		.flexi_nav{
 			ul{
 				position: relative;
@@ -1115,6 +1153,11 @@ and (orientation : landscape)
 				}
 			}
 		}	
+		.radioGroup{
+			label{
+			    padding-left: 25px;
+			}
+		}
 
 			
 	}
