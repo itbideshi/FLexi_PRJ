@@ -320,6 +320,9 @@ body{
 	.frm-label-lg{
 		@include make-xs-column(12);
 	}
+	.frm-cntrl-sml{
+		@include make-xs-column(4);	
+	}
 	.frm-cntrl{
 		@include make-xs-column(6);	
 		.errMsg{
@@ -330,6 +333,35 @@ body{
 		@include make-xs-column(12);	
 		.errMsg{
 			padding: 0!important;
+		}
+	}
+	.searchBox{
+		position: relative;
+		input[type="text"]{
+			padding-right: 35px !important;
+		}
+		.searchBtn{
+			background: transparent;
+			border: 0;
+			position: absolute;
+			right: 16px;
+		    top: 6px;
+		    width: 28px;
+		    height: 28px;
+		    padding: 0;
+		    outline: none;
+			&:before{
+				@extend .fa;
+				content:"\f002";
+				font-weight: bold;
+			    font-size: $fnt18;
+				color: $secondary-clr;
+			}
+		}
+	}
+	.editAddress{
+		.form-group{
+			margin-bottom: 12px !important;
 		}
 	}
 	select, .selectBox_container{
@@ -885,6 +917,19 @@ body{
 
 }
 
+.tick{
+	&:before{
+		@extend .fa, .fa-check;
+		font-style: normal;
+	}
+}
+.clear{
+	&:before{
+		@extend .fa, .fa-times;
+		font-style: normal;
+	}
+}
+
 
 	@media only screen 
 and (min-device-width : 414px) 
@@ -1156,6 +1201,19 @@ and (orientation : landscape)
 		.radioGroup{
 			label{
 			    padding-left: 25px;
+			}
+		}
+
+		.searchBox{
+			input[type="text"]{
+				padding-right: 45px !important;
+			}
+			.searchBtn{
+			    width: 38px;
+			    height: 38px;
+			    &:before{
+			    	font-size: $fnt24;
+			    }
 			}
 		}
 
