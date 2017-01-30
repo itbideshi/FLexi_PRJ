@@ -931,6 +931,12 @@ body{
 }
 
 
+.jumioLbl 
+	{
+		padding-left:48px;	
+	}
+
+
 	@media only screen 
 and (min-device-width : 414px) 
 and (max-device-width : 736px) 
@@ -956,9 +962,16 @@ and (orientation : landscape)
  }
 
 
+
+
 	/*-- Media Query CSS starts here --*/
 
 	@media (min-width: $screen-sm-min) { 
+
+		.jumioLbl 
+		{
+			padding-left:48px;	
+		}
 
 		.midCont 
 		{
