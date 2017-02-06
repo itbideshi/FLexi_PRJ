@@ -809,6 +809,23 @@ body{
 		}
 	}
 
+	.approvalDetails_blk{
+		margin: 0;
+		padding: 0 0 15px;
+		@include clearfix();
+		
+		label{
+			width: 142px;
+			float: left;
+		}
+		span{
+			font-weight: bold;
+			float: left;
+			margin-top:1px;
+		}
+		
+	}
+
 
 	.successCont 
 	{
@@ -835,10 +852,13 @@ body{
 			@include clearfix();
 			margin-bottom:40px;	
 			background:$disclr_bg;
+			.payMidLbl{
+				padding:20px 20px 0px 20px;
+			}
 			
 			.payMidCont
 			 { 
-			 padding:20px 20px 10px 20px;	
+			 padding:0px 20px 10px 20px;	
 				ul 
 				{
 				@include clearfix();
