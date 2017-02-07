@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Flexi Expenses Page</title>
+	<link rel="stylesheet" href="assets/stylesheets/flexi_style.css" />
+</head>
+<body>
+	<div class="container" id="Flexi_Container">
+		
+		<!-- header starts here -->
+		<header class="row">
+			<h1 class="siteLogo col-xs-12">
+				<img src="assets/images/flexi_logo.png" alt="Flexi-FI finance made simple" />
+			</h1>
+		</header>
+		<!-- header ends here -->
+
+		<!-- Page Navigation starts here -->
+		<div class="row">
+			<nav class="flexi_nav col-sm-6 align_mdl">
+				 <ul>
+				 	<li class="done">1. Details</li>
+				 	<li class="done">2. Plans</li>
+				 	<li class="done">3. Terms</li>
+				 	<li class="active">4. Payment</li>
+				 </ul>
+			</nav>
+		</div>
+		<!-- Page Navigation ends here -->
+		
+		
+
+		<!-- Page Content starts here -->
+		<div class="row">
+			<div class="col-sm-7 col-md-6 align_mdl midCont">
+				<div class="planCont">
+					<div class="paymentPlan">
+						<div class="form-group">
+							<label class="frmLbl" for="">Initial Payment</label>
+							<p>To continue you are required to make your first payment using a Debit or Credit Card.</p>
+						</div>
+						<div class="form-group">
+							<div class="paymentMid clearfix">
+								<label class="col-xs-8">1<sup>st</sup> Payment</label> 
+								<span class="col-xs-4 text-right">€ 30.00</span>
+							</div>						
+						</div>
+					</div>				
+				</div>
+				
+				<div class="form-group pageFrm">
+					<div class="row form-group">
+						<label class="frm-label-lg">Name on Card</label>
+						<div class="frm-cntrl-lg">
+							<input type="text" placeholder="Enter the name on card" />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label class="frm-label-lg">Card Number</label>
+						<div class="frm-cntrl-lg">
+							<input type="text" placeholder="Enter the card number" />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label class="frm-label-lg">Expiry Date</label>
+						<div class="frm-cntrl-lg">
+							<input type="text" placeholder="Enter the expiry date" />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label class="frm-label-lg">CCV Number</label>
+						<div class="frm-cntrl-lg">
+							<input type="text" placeholder="Enter the ccv number" />
+						</div>
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
+		<!-- Page Content ends here -->
+		
+
+		<!-- Form action buttons starts here -->
+		<div class="row">
+			<div class="col-sm-7 col-md-6 align_mdl flexi_actionBtns">
+				<div class="row">
+					<div class="col-xs-12 text-center"><button class="btn primary-btn form-control">Pay Now</button></div>
+				</div>
+			</div>
+		</div>
+		<!-- Form action buttons ends here -->		
+		
+		<!-- Page Content starts here -->
+		<div class="row mrgn_t40">
+			<div class="col-sm-7 col-md-6 align_mdl midCont">
+				<div class="planCont">
+					<div class="paymentPlan">
+						<div class="form-group">
+							<label class="frmLbl" for="">Recurring Billing Information</label>
+							<p>Flexi will automatically setup the minimal repayments to Debit from your nominated Account.</p>
+						</div>
+						<div class="form-group">
+							<div class="paymentMid clearfix">
+								<label class="col-xs-8">3 x Int Free Min. Repayments</label> 
+								<span class="col-xs-4 text-right">€ 62.12</span>
+							</div>
+							<div class="paymentMid clearfix">
+								<label class="col-xs-8">9 x Int Bearing Repayments*</label> 
+								<span class="col-xs-4 text-right">€ 122.12</span>
+							</div>						
+						</div>						
+					</div>
+
+					<div class="form-group pageFrm">
+						<div class="col-xs-12">
+							<label class="chkboxContainer">
+								<input type="checkbox" id="agree">
+								<em class="cstm_chkbox"></em>
+								I authorise Flexi to debit this card to take my repayments
+							</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- Page Content ends here -->
+
+		<!-- Form action buttons starts here -->
+		<div class="row">
+			<div class="col-sm-7 col-md-6 align_mdl flexi_actionBtns">
+				<div class="row">
+					<div class="col-xs-3 text-center"></div>
+					<div class="col-xs-6 text-center"><button class="btn primary-btn form-control">Pay Now</button></div>
+					<div class="col-xs-3 text-center"><a href="#">Save</a></div>
+				</div>
+			</div>
+		</div>
+		<!-- Form action buttons ends here -->
+		<div class="row mrgn_t40">
+			<div class="text-center"><a href="#">Cancel this order</a></div>
+		</div>
+		
+		<!-- Footer starts here -->
+		<footer class="pageFooter frmFooter">
+			<ul>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms &amp; Conditions</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+			<p>&copy; Copyright Flexi Group 2016</p>
+		</footer>
+		<!-- Footer ends here -->
+
+	</div>
+	<script src="assets/scripts/jquery.min.js"></script>
+	<script src="assets/scripts/flexi_JS.js"></script>
+</body>
+</html>
