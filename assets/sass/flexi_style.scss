@@ -858,7 +858,7 @@ body{
 			
 			.payMidCont
 			 { 
-			 padding:0px 20px 10px 20px;	
+			 padding:20px 20px 10px 20px;	
 				ul 
 				{
 				@include clearfix();
@@ -877,8 +877,11 @@ body{
 			.botCont 
 			{
 				@include clearfix();
-				padding:15px;
+				padding:15px 20px;
 				background:$secondary-clr;
+				margin-left: -20px;
+			    margin-right: -20px;
+			    margin-bottom: -20px;
 
 			  &.clicked 
 			  {
@@ -893,6 +896,9 @@ body{
 			  		display:inline-block; 
 			  		padding-left:40px;
 			  		color:$base-fnt-clr;
+			  		&.clsTick:before{
+			  			content: "";
+			  		}
 			  }	
 			}
 
@@ -910,7 +916,16 @@ body{
 		.viewAll 
 		{
 		   margin-bottom:40px;		
-		}		
+		}	
+
+
+	}
+
+	.chkboxContainer{
+		input[type="checkbox"], .cstm_chkbox{
+			left: 0;
+		}
+		padding-left: 40px;
 	}
 
 .termsCont 
@@ -967,6 +982,11 @@ body{
 		padding-left:16px;	
 	}
 
+.paymentMid{
+	background: $base-fnt-clr;
+	color: $blk-clr;
+	padding-top: 10px;
+} 
 
 	@media only screen 
 and (min-device-width : 414px) 
@@ -988,8 +1008,8 @@ and (orientation : landscape)
 
 {
 	@include make-xs-column(6);	
-} 
-	
+}
+
  }
 
 
