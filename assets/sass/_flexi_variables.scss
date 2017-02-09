@@ -116,7 +116,6 @@ $red-clr:#cc0000;
 	}
 }
 
-
 @mixin radioBtn(){		
 	/*margin-right: 9px;
 	margin-top: -3px;
@@ -229,4 +228,7 @@ input[type="radio"]:checked ~ .customRadioBtn{
 }
 .fa-times{
 	content: "\f00d";
+}
+.fa-eur{
+	content: "\f153";
 }
