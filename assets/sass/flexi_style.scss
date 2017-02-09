@@ -997,6 +997,24 @@ body{
 	padding-top: 10px;
 } 
 
+.euro{
+	&:before{
+		@extend .fa, .fa-eur;
+		position: absolute;
+		top: 50%;
+		-moz-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		color: $blk-clr;
+		left: 30px;
+		margin-top: 2px;
+	}
+	input[type="text"]{
+		padding-left: 35px !important; 
+	}
+}
+
+
 	@media only screen 
 and (min-device-width : 414px) 
 and (max-device-width : 736px) 
