@@ -473,6 +473,9 @@ body{
 		width: 17px;
 		height: 17px;
 		position: absolute;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius: 20px;
 		left: 0;
 		top: -5px;
 		vertical-align: middle;
@@ -867,30 +870,39 @@ body{
 			
 			.payMidCont
 			 { 
-			 padding:20px 20px 10px 20px;	
-				ul 
-				{
+			 	padding:25px 25px 25px 25px;
+			 	label.frmLbl{
+			 		margin-bottom: 20px;
+			 	}	
+				ul{
 				@include clearfix();
 				margin:0px;
 				padding:0px;
-					li 
-					{
-					  list-style-type:none;
-					  span { text-align:right; font-weight:bold;}
-					  label { text-align:left; padding-left:0px;}
-
+					li{
+						list-style-type:none;
+						span
+						{
+							text-align:right; 
+							font-weight:bold;
+						}
+					  	label
+					  	{ 
+					  		text-align:left; 
+					  		padding-left:0px; 
+					  		margin-bottom: 15px;
+					  	}
 					}
 				}
-
 			}
 			.botCont 
 			{
 				@include clearfix();
-				padding:15px 20px;
+				margin-top: 15px;
+				padding:15px 25px;
 				background:$secondary-clr;
-				margin-left: -20px;
-			    margin-right: -20px;
-			    margin-bottom: -20px;
+				margin-left: -25px;
+			    margin-right: -25px;
+			    margin-bottom: -25px;
 
 			  &.clicked 
 			  {
@@ -899,14 +911,14 @@ body{
 
 			  .tick 
 			  {
-			  		background: url('../images/stick.png') no-repeat left top;
-			  		height:35px;
-			  		line-height:35px;
-			  		display:inline-block; 
-			  		padding-left:40px;
 			  		color:$base-fnt-clr;
 			  		&.clsTick:before{
-			  			content: "";
+			  			color: $base-fnt-clr;
+					    font-size: 32px;
+					    line-height: 0;
+					    padding-right: 10px;
+					    position: relative;
+					    top: 3px;
 			  		}
 			  }	
 			}
@@ -924,7 +936,7 @@ body{
 
 		.viewAll 
 		{
-		   margin-bottom:40px;		
+		   //margin-bottom:40px;		
 		}	
 
 
@@ -1000,17 +1012,24 @@ body{
 .euro{
 	&:before{
 		@extend .fa, .fa-eur;
-		position: absolute;
-		top: 50%;
-		-moz-transform: translateY(-50%);
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
-		color: $blk-clr;
-		left: 30px;
-		margin-top: 2px;
+		margin-right: 5px;
+		font-weight: normal;
 	}
-	input[type="text"]{
-		padding-left: 35px !important; 
+	&.frm-cntrl, &.frm-cntrl-lg{
+		&:before{
+			margin-right: 0;
+			position: absolute;
+			top: 50%;
+			-moz-transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			color: $blk-clr;
+			left: 30px;
+			margin-top: 2px;
+		}
+		input[type="text"]{
+			padding-left: 35px !important; 
+		}
 	}
 }
 
@@ -1070,7 +1089,7 @@ and (orientation : landscape)
 		 {	
 			.viewAll 
 			{
-			   margin-bottom:80px;		
+			   //margin-bottom:80px;		
 			}
 		 }			
 		.saveApp_overlay{
