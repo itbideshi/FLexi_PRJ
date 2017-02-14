@@ -470,14 +470,14 @@ body{
 	}
 	input[type="radio"]{
 		//@include radioBtn();
-		width: 17px;
-		height: 17px;
+		width: 15px;
+		height: 15px;
 		position: absolute;
 		-moz-border-radius: 20px;
 		-webkit-border-radius: 20px;
 		border-radius: 20px;
 		left: 0;
-		top: -5px;
+		top: -2px;
 		vertical-align: middle;
         //visibility: hidden;
 		/*&:before{
@@ -731,11 +731,11 @@ body{
 
 	input[type="checkbox"]{
 	    //visibility: hidden;
-	    width: 26px;
-	    height: 26px;
+	    width: 24px;
+	    height: 24px;
 	    position: absolute;
-	    left: -42px;
-	    top: -7px;
+	    left: -41px;
+	    top: -3px;
 	}
 	input[type="checkbox"]:checked ~ .cstm_chkbox{
 	    &:before{
@@ -1213,6 +1213,7 @@ and (orientation : landscape)
 		input[type="radio"]{
 			width: 25px;
 			height: 25px;
+			top: -5px;
 			/*&:before{
 				border-width: 5px;
 			}*/
