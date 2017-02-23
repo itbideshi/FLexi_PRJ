@@ -735,7 +735,9 @@ body{
 	    height: 24px;
 	    position: absolute;
 	    left: -41px;
-	    top: -3px;
+	    top: -6px;
+	    background: transparent;
+	    border-color: transparent;
 	}
 	input[type="checkbox"]:checked ~ .cstm_chkbox{
 	    &:before{
