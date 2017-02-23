@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>FlexiFI Portal</title>
+	<link rel="stylesheet" href="assets/stylesheets/flexiPortal.css" />
+</head>
+<body>
+	<div id="Flexi_Container">
+		<header class="portalHeader">
+			<section class="container">
+				<a href="#" class="visible-xs">
+					<em class="hamburgerMenu"></em>
+				</a>
+				<div class="row">
+					<div class="col-sm-2">
+						<img src="assets/images/flexi_logo.png" alt="FlexiFI" class="img-responsive" />
+					</div>
+					<div class="col-sm-offset-1 col-sm-6 text-center">
+						<div class="input-group searchBar">					      
+					      <input type="text" class="form-control" placeholder="Search..." />
+					      <span class="input-group-btn">
+					        <button class="btn btn-default" type="button">Search</button>
+					      </span>
+					    </div>
+					</div>
+					<div class="col-sm-3 text-right hidden-xs">
+						<div class="userMenu">
+							<img src="assets/images/user_icon.png" alt="" class="userIcon"  />
+							STORE AD... <span class="caret"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</header>
+		<nav class="portalNavigation">
+			<div class="container">
+				<ul>
+					<li class=" visible-xs">
+						<div class="userMenu">
+							<img src="assets/images/user_icon.png" alt="" class="userIcon"  />
+							STORE AD... <span class="caret"></span>
+						</div>
+						<em class="closeMenu"></em>
+					</li>
+					<li><a href="#"><em class="home"></em></a></li>
+					<li><a href="#">Purchases</a></li>
+					<li><a href="#">Payments</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="portalContent container">
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="catBox">
+								<em class="icnelem quote"></em>
+								Quote
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="catBox">
+								<em class="icnelem apply"></em>
+								Apply
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="catBox">
+								<em class="icnelem purchase"></em>
+								Purchase
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="catBox">
+								<em class="icnelem info"></em>
+								Info
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="portalSidebar text-center">
+						<div class="askQuestion">
+							<img src="assets/images/askQuestion.png" alt="Ask Question" />
+						</div>
+						<h3>Don’t see what you are looking for?</h3>
+						<button class="btn primaryBtn">Ask a question</button>
+						<button class="btn primaryBtn mrgn_t10">Contact Support</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	var showMenu = document.querySelectorAll('.hamburgerMenu')[0];
+	var hideMenu = document.querySelectorAll('.closeMenu')[0];
+	var portalNav = document.querySelectorAll('.portalNavigation')[0];
+	showMenu.addEventListener('click', function(){
+		portalNav.classList.add('open');
+	});
+	hideMenu.addEventListener('click', function(){
+		portalNav.classList.remove('open');
+	});
+
+</script>
+</html>
