@@ -3,7 +3,9 @@
 
 $primary-clr: #01a787;
 $white-clr: #fff;
-
+html{
+	font-size: inherit;
+}
 body{
 	font-family: 'OpenSans';
 }

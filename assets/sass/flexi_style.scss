@@ -4,7 +4,7 @@
 
 html{
 	background: $body-bg;
-	padding: 0 0 20px;
+	padding: 0;
 }
 body{
 	background: $body-bg;
@@ -302,7 +302,7 @@ body{
 		text-align: center;
 		font-size: $fnt11;
 		color: #6d6d72;
-		padding: 20px 0;
+		padding: 20px 0 10px;
 
 		p{
 			margin: 10px 0;
@@ -855,6 +855,15 @@ body{
 
 	.planCont 
 	{
+		&.planTerms + p{
+			font-style: italic;
+			margin-bottom: 0;
+		}
+		&.planTerms{
+			.paymentBox .payMidCont {
+			    padding-bottom: 10px;
+			}
+		}
 
 		.paymentPlan 
 		{
@@ -957,6 +966,7 @@ body{
 	.paymentBox 
 	{
 		margin-bottom:0px!important;
+
 	}	
 	.termHeading 
 	{
@@ -967,15 +977,36 @@ body{
 		font-size:$fnt16;
 	}		
 }
+.termHeading 
+{
+	@include clearfix();	
+	border-bottom:1px #ccc solid;
+	margin-bottom:15px;	
+	font-weight:bold;
+	font-size:$fnt16;
+
+	label.frmLbl{
+		margin-bottom: 15px !important;
+	}
+}
 
 .termsApp_overlay 
 {
+	margin-top: 12px !important;
+	&:before{
+		left: 14%;
+		top: -54px;
+	}
 	.termsAppHead 
 	{
 		background: url('../images/terms_icn.png') no-repeat left top;
 		padding-left:80px;
 		border-bottom:1px $grey-dark-clr solid;	
 		margin-bottom:20px;
+
+		h3{
+			margin-top: 0;
+		}
 
 	}
 
@@ -1035,6 +1066,20 @@ body{
 	}
 }
 
+.expiryDate .month, 
+.expiryDate .year
+{
+	padding-left: 10px;
+	width: 75px;
+	float: left;
+}
+
+.expiryDate .year{
+	width: 96px;
+	padding-right: 10px;
+	padding-left: 0;
+}
+
 
 	@media only screen 
 and (min-device-width : 414px) 
@@ -1067,6 +1112,10 @@ and (orientation : landscape)
 
 	@media (min-width: $screen-sm-min) { 
 
+		.expiryDate .month{
+			width: 85px;
+		}
+		
 		.jumioLbl 
 		{
 			padding-left:48px;	
