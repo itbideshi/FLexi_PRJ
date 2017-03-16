@@ -5,9 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>FlexiFI Portal</title>
 	<link rel="stylesheet" href="assets/stylesheets/flexiPortal.css" />
+	<style>
+		html, body{			
+			height: 100%;
+			min-height: 100%;
+		}
+		.Flexi_portal{
+			height: 100%;
+			min-height: 100%;			
+			padding-bottom: 80px;
+		}
+		.portal_pageFooter{
+			position: relative;
+			top: -86px;
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
-	<div id="Flexi_Container">
+	<div id="Flexi_Container" class="Flexi_portal">
 		<header class="portalHeader">
 			<section class="container">
 				<a href="#" class="visible-xs">
@@ -50,49 +66,16 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="portalContent container">
-			<div class="row">
-				<div class="col-sm-8">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="catBox">
-								<em class="icnelem quote"></em>
-								Quote
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="catBox">
-								<em class="icnelem apply"></em>
-								Apply
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="catBox">
-								<em class="icnelem purchase"></em>
-								Purchase
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="catBox">
-								<em class="icnelem info"></em>
-								Info
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="portalSidebar text-center">
-						<div class="askQuestion">
-							<img src="assets/images/askQuestion.png" alt="Ask Question" />
-						</div>
-						<h3>Don’t see what you are looking for?</h3>
-						<button class="btn primaryBtn">Ask a question</button>
-						<button class="btn primaryBtn mrgn_t10">Contact Support</button>
-					</div>
-				</div>
-			</div>
-		</div>
+		
+
+		
 	</div>
+	<footer class="portal_pageFooter text-center">
+			<ul>
+				<li>&copy; Copyright Flexi-Fi 2017</li>
+				<li><a href="#">Contact Support</a></li>
+			</ul>
+		</footer>
 </body>
 
 <script>
@@ -107,4 +90,21 @@
 	});
 
 </script>
+<style>
+	.portal_pageFooter ul{
+		list-style-type: none;
+	}
+	.portal_pageFooter li{
+		display: inline-block;	
+		padding:0 10px;
+	}
+	.portal_pageFooter li + li{
+		border-left: 1px solid #e4e4e4;
+	}
+	.portal_pageFooter{
+		padding: 10px 0;
+		border-bottom: 15px solid #01a787;
+		margin-bottom: 20px;
+	}
+</style>
 </html>

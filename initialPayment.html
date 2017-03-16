@@ -5,6 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Flexi Expenses Page</title>
 	<link rel="stylesheet" href="assets/stylesheets/flexi_style.css" />
+	<style>
+		#Flexi_Container .expiryDate .month, #Flexi_Container .expiryDate .year{
+			padding-left: 10px;
+			width: 75px;
+			float: left;
+		}
+		#Flexi_Container .expiryDate .year{
+			width: 96px;
+			padding-right: 10px;
+			padding-left: 0;
+		}
+		@media(min-width: 768px){
+			#Flexi_Container .expiryDate .month{
+				width: 85px;
+			}
+		}
+	</style>
 </head>
 <body>
 	<div class="container" id="Flexi_Container">
@@ -65,10 +82,13 @@
 						</div>
 					</div>
 
-					<div class="row form-group">
+					<div class="row form-group expiryDate">
 						<label class="frm-label-lg">Expiry Date</label>
-						<div class="frm-cntrl">
-							<input type="text" placeholder="Enter the expiry date" />
+						<div class="month">
+							<input type="text" placeholder="MM" />
+						</div>
+						<div class="year">
+							<input type="text" placeholder="YYYY" />
 						</div>
 					</div>
 
@@ -125,11 +145,19 @@
 								I authorise Flexi to debit this card to take my repayments
 							</label>
 						</div>
-					</div>
+					</div>	
 
 				</div>
+
+				<div class="row">
+					<div class="errMsg">
+						I authorise Flexi to debit this card to take my repayments
+					</div>
+				</div>
+
 			</div>
 		</div>
+
 		<!-- Page Content ends here -->
 
 		<!-- Form action buttons starts here -->
